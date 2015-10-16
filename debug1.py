@@ -51,4 +51,11 @@ finally:
     print 'finally...'
 print 'END'
 
+try:
+    foo()
+except StandardError, e:
+    print 'StandardError'
+except ValueError, e:
+    print 'ValueError'
+
 
