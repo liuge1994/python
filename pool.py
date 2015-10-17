@@ -11,7 +11,7 @@ def long_time_task(name):
 if __name__ == '__main__':
     print 'Parent process %s.' %os.getpid()
     p = Pool()
-    for i in range(5):
+    for i in range(9):
         p.apply_async(long_time_task, args = (i, 1))
     print 'Warting for all subprocesses done...'
     p.close()
